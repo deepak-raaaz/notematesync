@@ -1,0 +1,15 @@
+from django.shortcuts import render
+
+
+# Create your views here.
+def home(request):
+    return render(request,'index.html')
+
+def notes(request):
+    return render(request,'notes.html')
+
+def notesview(request):
+    return render(request,'notes-view.html')
+
+def college(request):
+    return render(request,'college-view.html')

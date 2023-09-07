@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load static  %}
+{% block content %}
+<div class="container" style="padding-top:100px;">
+
+    <!-- search notes form   -->
+    <form>
+      <div class="input-group c-search p-2 mb-4 ">
+        <i class="bi bi-search mx-3 mt-2"></i>
+        <input type="text" class="form-control " placeholder="Search Notes" aria-label="Recipient's username"
+          aria-describedby="button-addon2">
+          <span style="height: 25px; background-color: #c7c7c7; width: 3px; border-radius: 5px; margin-top: 6px;" class="mx-2"> </span>
+        <button class="btn btn-outline-secondary c-search-btn ms-2 px-5" type="button" id="button-addon2">Search</button>
+      </div>
+    </form>
+
+    <!-- Dropdown button  -->
+    <div class="row justify-content-start">
+      <div class="col-auto">
+        <select class="form-select c-select py-2" aria-label="Default select example">
+          <option selected>Institute</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+
+      <div class="col-auto">
+        <select class="form-select c-select py-2" aria-label="Default select example">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+
+      <div class="col-auto">
+        <select class="form-select c-select py-2" aria-label="Default select example">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <!-- Dropdown button End  -->
+
+  <hr>
+
+  <!-- Notes Card Main Container  -->
+  <div class="container my-3">
+    <div class="row">
+      <!-- Notes List Container  -->
+      <div class="col-lg-9 pt-3 px-4" style="background-color: #fff; border: 1px solid #d7dde0; border-radius: 10px;">
+        <div class="row justify-content-end ">
+          <div class="col-auto">
+            <select class="form-select c-select c-select2 py-2" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          
+        <!--  notes card -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card mt-3" style="border-radius: 15px; overflow: hidden;">
+              <!-- Thumbnail image -->
+              <img src="{% static 'assets/img/pdf-thumbnail.png' %}" class="card-img-top" alt="...">
+              <hr>
+              <div class="card-body py-0 pb-3">
+                <div class="d-inline-flex py-2 px-3 mb-3" style="font-size: 0.85rem; background-color: hsla(0, 0%, 86%, 0.3); border-radius: 5px; color: #4886FF;">
+                  <span><i class="bi bi-file-earmark-pdf"></i></span>
+                  <!--Page Number-->
+                  <span class="ms-2" >69 Pages</span>
+                </div>
+                <!-- Title -->
+                <h5 class="card-title fw-semibold">Edexcel IGCSE Business Studies </h5>
+                <!-- Subject Name -->
+                <p class="card-text" style="color: #4886FF;">Engineering</p>
+                <hr>
+                <div class="mb-2" style="color: #848484;">
+                  <span><i class="bi bi-file-earmark-pdf"></i></span>
+                  <!-- Institude Name -->
+                  <span class="ms-2 fs-6">Haldia Institute of Tech...</span>
+                </div>
+                
+                <div class="d-inline-flex mb-2" style="color: #848484;">
+                  <span><i class="bi bi-calendar"></i></span>
+                  <!-- Date -->
+                  <span class="ms-2 fs-6">22 June, 2023</span>
+                </div>
+
+                <div class="d-inline-flex ms-2 mb-2" style="color: #848484;">
+                  <span><i class="bi bi-hand-thumbs-up-fill"></i></span>
+                  <!-- Like -->
+                  <span class="ms-2 fs-6">69</span>
+                </div>
+
+                <div class="d-inline-flex ms-2 mb-2" style="color: #848484;">
+                  <span><i class="bi bi-chat"></i></span>
+                  <!-- Comments -->
+                  <span class="ms-2 fs-6">69</span>
+                </div>
+              </div>
+
+            </div>
+          </div> <!--  #notes card end-->
+
+          
+        </div>
+
+
+        <div class="row my-3 justify-content-center">
+          <div class="col-auto ">
+            <nav aria-label="...">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3" style="height:800px;">
+
+      </div>
+    </div>
+    
+  </div>
+{% endblock content %}
