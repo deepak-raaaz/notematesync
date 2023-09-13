@@ -13,5 +13,5 @@ def note_view(request):
 
     return render(request,'notes.html',context)
 
-def like_note(request):
-    return redirect('notes:note-list')
+# def like_note(request):
+#     return redirect('notes:note-list')
