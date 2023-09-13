@@ -1712,6 +1712,12 @@ section {
 .c-hr{
   color: #a5a5a5;
 }
+.c-white{
+  color: white;
+}
+.c-bg-white{
+  background-color: #fff
+}
 .c-gradient{
   background: linear-gradient(156deg, rgba(187,135,239,1) 0%, rgba(130,36,227,1) 100%) !important;
   color: white !important;
@@ -2644,4 +2650,90 @@ section {
 
 .black-g-bg{
   background: linear-gradient(transparent,transparent,black);
+}
+
+/* club card  */
+.club-card{
+  height: auto;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 12px;
+  padding-bottom: 15px;
+}
+.club-card .cover{
+  height: 110px;
+  background-image: url(../img/cover-img.jpg);
+}
+/* .club-card .profile{
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  margin-top: -50px; */
+  /* background-image: url(../img/chat_round_shape.png); */
+  /* background-color: red;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.club-card .profile div{
+  width: 85px;
+  height: 85px;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 6px 21px 0 rgba(0,0,0,.12);
+  z-index: 0;
+}
+.club-card .profile img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+
+.profile-card{
+  margin-top: -40px;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  position: relative;
+  box-shadow: 0 6px 21px 0 rgba(0,0,0,.12);
+}
+.profile-card::before{
+  content: url(../img/chat_round_shape.png);
+  transform: scale(.9);
+  position: absolute;
+  top: -17.5%;
+  left: -17.5%;
+  
+}
+.profile-card img{
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.member-conatiner{
+  display: flex;
+  justify-content: center;
+}
+.member-profile{
+  height: 45px;
+  width: 45px;
+  border-radius: 30px;
+  margin-left: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 1px solid #fff;
+}
+
+.verticle-line{
+  height: 50px;
+  width: 1px;
+  background-color: #c7c7c7;
 }

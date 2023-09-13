@@ -6,4 +6,5 @@ urlpatterns = [
    
    path('notes-view/',views.notesview,name='notesview'),
    path('college/',views.college,name='college'),
+   path('club/',views.club,name='club'),
 ]

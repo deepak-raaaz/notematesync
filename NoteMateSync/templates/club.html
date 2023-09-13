@@ -1,0 +1,324 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section>
+    <div class="container mt-5">
+        <div class="row bg-danger rounded-2" style="height:200px">
+           <!--banner images here--> 
+        </div>
+        <div class="row px-2 py-3 my-4 align-items-center">
+            <div class="col-6">
+                <div class="input-group">
+                    <input type="text" class="form-control rounded-5 px-3" placeholder="Search club" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="c-btn ms-2" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+            <div class="col-6 d-flex justify-content-end align-items-center">
+                Order By - 
+                <div class="col-auto ms-2">
+                    <select class="form-select c-select c-select2 py-2 border border-0" aria-label="Default select example">
+                      <option selected>Open this select menu</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 p-0 m-0">
+                <div class="club-card m-3">
+                    <div class="cover">
+
+                    </div>
+                    <div class="profile-card mx-auto">
+                        <img src="{% static 'assets/img/profile-img.jpg' %}" alt="">
+                    </div>
+                    {% comment %} <div class="profile mx-auto">
+                        <div>
+                            <img src="{% static 'assets/img/profile-img.jpg' %}" alt="">
+                        </div>
+                    </div> {% endcomment %}
+                    <h3 class="fs-5 mt-3 text-center">Club Name</h3>
+                    <p class="fs-6 text-center c-grey">Club type</p>
+                    <div class="member-conatiner my-4">
+                        <div class="member-profile bg-danger"></div>
+                        <div class="member-profile bg-success"></div>
+                        <div class="member-profile bg-warning"></div>
+                        <div class="member-profile bg-danger"></div>
+                        <div class="member-profile bg-info"><i class="bi bi-plus fs-3"></i></div>
+                    </div>
+                    <div class="row d-flex justify-content-center mx-2">
+                        <div class="col-5">
+                            <p class="fs-5 text-center m-0">1</p>
+                            <p class="c-grey">Group Post</p>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <div class="verticle-line"></div>
+                        </div>
+                        <div class="col-5">
+                            <p class="fs-5 text-center m-0">1</p>
+                            <p class="c-grey">Group Post</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-3 p-0 m-0">
+                <div class="club-card m-3">
+                    <div class="cover">
+
+                    </div>
+                    <div class="profile-card mx-auto">
+                        <img src="{% static 'assets/img/profile-img.jpg' %}" alt="">
+                    </div>
+                    {% comment %} <div class="profile mx-auto">
+                        <div>
+                            <img src="{% static 'assets/img/profile-img.jpg' %}" alt="">
+                        </div>
+                    </div> {% endcomment %}
+                    <h3 class="fs-5 mt-3 text-center">Club Name</h3>
+                    <p class="fs-6 text-center c-grey">Club type</p>
+                    <div class="member-conatiner my-4">
+                        <div class="member-profile bg-danger"></div>
+                        <div class="member-profile bg-success"></div>
+                        <div class="member-profile bg-warning"></div>
+                        <div class="member-profile bg-danger"></div>
+                        <div class="member-profile bg-info"><i class="bi bi-plus fs-3"></i></div>
+                    </div>
+                    <div class="row d-flex justify-content-center mx-2">
+                        <div class="col-5">
+                            <p class="fs-5 text-center m-0">1</p>
+                            <p class="c-grey">Group Post</p>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <div class="verticle-line"></div>
+                        </div>
+                        <div class="col-5">
+                            <p class="fs-5 text-center m-0">1</p>
+                            <p class="c-grey">Group Post</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-3 p-0 m-0">
+                <div class="club-card m-3">
+                    <div class="cover">
+
+                    </div>
+                    <div class="profile-card mx-auto">
+                        <img src="{% static 'assets/img/profile-img.jpg' %}" alt="">
+                    </div>
+                    {% comment %} <div class="profile mx-auto">
+                        <div>
+                            <img src="{% static 'assets/img/profile-img.jpg' %}" alt="">
+                        </div>
+                    </div> {% endcomment %}
+                    <h3 class="fs-5 mt-3 text-center">Club Name</h3>
+                    <p class="fs-6 text-center c-grey">Club type</p>
+                    <div class="member-conatiner my-4">
+                        <div class="member-profile bg-danger"></div>
+                        <div class="member-profile bg-success"></div>
+                        <div class="member-profile bg-warning"></div>
+                        <div class="member-profile bg-danger"></div>
+                        <div class="member-profile bg-info"><i class="bi bi-plus fs-3"></i></div>
+                    </div>
+                    <div class="row d-flex justify-content-center mx-2">
+                        <div class="col-5">
+                            <p class="fs-5 text-center m-0">1</p>
+                            <p class="c-grey">Group Post</p>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <div class="verticle-line"></div>
+                        </div>
+                        <div class="col-5">
+                            <p class="fs-5 text-center m-0">1</p>
+                            <p class="c-grey">Group Post</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-3 p-0 m-0">
+                <div class="club-card m-3">
+                    <div class="cover">
+
+                    </div>
+                    <div class="profile-card mx-auto">
+                        <img src="{% static 'assets/img/profile-img.jpg' %}" alt="">
+                    </div>
+                    {% comment %} <div class="profile mx-auto">
+                        <div>
+                            <img src="{% static 'assets/img/profile-img.jpg' %}" alt="">
+                        </div>
+                    </div> {% endcomment %}
+                    <h3 class="fs-5 mt-3 text-center">Club Name</h3>
+                    <p class="fs-6 text-center c-grey">Club type</p>
+                    <div class="member-conatiner my-4">
+                        <div class="member-profile bg-danger"></div>
+                        <div class="member-profile bg-success"></div>
+                        <div class="member-profile bg-warning"></div>
+                        <div class="member-profile bg-danger"></div>
+                        <div class="member-profile bg-info"><i class="bi bi-plus fs-3"></i></div>
+                    </div>
+                    <div class="row d-flex justify-content-center mx-2">
+                        <div class="col-5">
+                            <p class="fs-5 text-center m-0">1</p>
+                            <p class="c-grey">Group Post</p>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <div class="verticle-line"></div>
+                        </div>
+                        <div class="col-5">
+                            <p class="fs-5 text-center m-0">1</p>
+                            <p class="c-grey">Group Post</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-3 p-0 m-0">
+                <div class="club-card m-3">
+                    <div class="cover">
+
+                    </div>
+                    <div class="profile-card mx-auto">
+                        <img src="{% static 'assets/img/profile-img.jpg' %}" alt="">
+                    </div>
+                    {% comment %} <div class="profile mx-auto">
+                        <div>
+                            <img src="{% static 'assets/img/profile-img.jpg' %}" alt="">
+                        </div>
+                    </div> {% endcomment %}
+                    <h3 class="fs-5 mt-3 text-center">Club Name</h3>
+                    <p class="fs-6 text-center c-grey">Club type</p>
+                    <div class="member-conatiner my-4">
+                        <div class="member-profile bg-danger"></div>
+                        <div class="member-profile bg-success"></div>
+                        <div class="member-profile bg-warning"></div>
+                        <div class="member-profile bg-danger"></div>
+                        <div class="member-profile bg-info"><i class="bi bi-plus fs-3"></i></div>
+                    </div>
+                    <div class="row d-flex justify-content-center mx-2">
+                        <div class="col-5">
+                            <p class="fs-5 text-center m-0">1</p>
+                            <p class="c-grey">Group Post</p>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <div class="verticle-line"></div>
+                        </div>
+                        <div class="col-5">
+                            <p class="fs-5 text-center m-0">1</p>
+                            <p class="c-grey">Group Post</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-3 p-0 m-0">
+                <div class="club-card m-3">
+                    <div class="cover">
+
+                    </div>
+                    <div class="profile-card mx-auto">
+                        <img src="{% static 'assets/img/profile-img.jpg' %}" alt="">
+                    </div>
+                    {% comment %} <div class="profile mx-auto">
+                        <div>
+                            <img src="{% static 'assets/img/profile-img.jpg' %}" alt="">
+                        </div>
+                    </div> {% endcomment %}
+                    <h3 class="fs-5 mt-3 text-center">Club Name</h3>
+                    <p class="fs-6 text-center c-grey">Club type</p>
+                    <div class="member-conatiner my-4">
+                        <div class="member-profile bg-danger"></div>
+                        <div class="member-profile bg-success"></div>
+                        <div class="member-profile bg-warning"></div>
+                        <div class="member-profile bg-danger"></div>
+                        <div class="member-profile bg-info"><i class="bi bi-plus fs-3"></i></div>
+                    </div>
+                    <div class="row d-flex justify-content-center mx-2">
+                        <div class="col-5">
+                            <p class="fs-5 text-center m-0">1</p>
+                            <p class="c-grey">Group Post</p>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <div class="verticle-line"></div>
+                        </div>
+                        <div class="col-5">
+                            <p class="fs-5 text-center m-0">1</p>
+                            <p class="c-grey">Group Post</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-3 p-0 m-0">
+                <div class="club-card m-3">
+                    <div class="cover">
+
+                    </div>
+                    <div class="profile-card mx-auto">
+                        <img src="{% static 'assets/img/profile-img.jpg' %}" alt="">
+                    </div>
+                    {% comment %} <div class="profile mx-auto">
+                        <div>
+                            <img src="{% static 'assets/img/profile-img.jpg' %}" alt="">
+                        </div>
+                    </div> {% endcomment %}
+                    <h3 class="fs-5 mt-3 text-center">Club Name</h3>
+                    <p class="fs-6 text-center c-grey">Club type</p>
+                    <div class="member-conatiner my-4">
+                        <div class="member-profile bg-danger"></div>
+                        <div class="member-profile bg-success"></div>
+                        <div class="member-profile bg-warning"></div>
+                        <div class="member-profile bg-danger"></div>
+                        <div class="member-profile bg-info"><i class="bi bi-plus fs-3"></i></div>
+                    </div>
+                    <div class="row d-flex justify-content-center mx-2">
+                        <div class="col-5">
+                            <p class="fs-5 text-center m-0">1</p>
+                            <p class="c-grey">Group Post</p>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <div class="verticle-line"></div>
+                        </div>
+                        <div class="col-5">
+                            <p class="fs-5 text-center m-0">1</p>
+                            <p class="c-grey">Group Post</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+        </div>
+        <div class="row my-3 justify-content-center">
+            <div class="col-auto ">
+              <nav aria-label="...">
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+    </div>
+</section>
+
+
+
+
+
+{% endblock content %}

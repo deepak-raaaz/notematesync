@@ -12,3 +12,6 @@ def notesview(request):
 
 def college(request):
     return render(request,'college-view.html')
+
+def club(request):
+    return render(request,'club.html')
