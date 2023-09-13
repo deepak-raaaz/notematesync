@@ -5,8 +5,7 @@ from django.shortcuts import render
 def home(request):
     return render(request,'index.html')
 
-def notes(request):
-    return render(request,'notes.html')
+
 
 def notesview(request):
     return render(request,'notes-view.html')

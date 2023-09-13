@@ -65,40 +65,40 @@
         </div>
 
         <div class="row">
-          
+          {% for obj in qs%}
         <!--  notes card -->
           <div class="col-lg-4 col-md-6">
             <div class="card mt-3" style="border-radius: 15px; overflow: hidden;">
               <!-- Thumbnail image -->
-              <img src="{% static 'assets/img/pdf-thumbnail.png' %}" class="card-img-top" alt="...">
+              <img src="{{team.img.url}}" class="card-img-top" alt="...">
               <hr>
               <div class="card-body py-0 pb-3">
                 <div class="d-inline-flex py-2 px-3 mb-3" style="font-size: 0.85rem; background-color: hsla(0, 0%, 86%, 0.3); border-radius: 5px; color: #4886FF;">
                   <span><i class="bi bi-file-earmark-pdf"></i></span>
                   <!--Page Number-->
-                  <span class="ms-2" >69 Pages</span>
+                  <span class="ms-2" >{{obj.page}}</span>
                 </div>
                 <!-- Title -->
-                <h5 class="card-title fw-semibold">Edexcel IGCSE Business Studies </h5>
+                <h5 class="card-title fw-semibold">{{obj.title}}</h5>
                 <!-- Subject Name -->
-                <p class="card-text" style="color: #4886FF;">Engineering</p>
+                <p class="card-text" style="color: #4886FF;">{{obj.course}}</p>
                 <hr>
                 <div class="mb-2" style="color: #848484;">
                   <span><i class="bi bi-file-earmark-pdf"></i></span>
                   <!-- Institude Name -->
-                  <span class="ms-2 fs-6">Haldia Institute of Tech...</span>
+                  <span class="ms-2 fs-6">{{obj.college}}</span>
                 </div>
                 
                 <div class="d-inline-flex mb-2" style="color: #848484;">
                   <span><i class="bi bi-calendar"></i></span>
                   <!-- Date -->
-                  <span class="ms-2 fs-6">22 June, 2023</span>
+                  <span class="ms-2 fs-6">{{obj.created}}</span>
                 </div>
 
                 <div class="d-inline-flex ms-2 mb-2" style="color: #848484;">
                   <span><i class="bi bi-hand-thumbs-up-fill"></i></span>
                   <!-- Like -->
-                  <span class="ms-2 fs-6">69</span>
+                  <span class="ms-2 fs-6"></span>
                 </div>
 
                 <div class="d-inline-flex ms-2 mb-2" style="color: #848484;">
@@ -110,6 +110,7 @@
 
             </div>
           </div> <!--  #notes card end-->
+          {% endfor %}
 
           
         </div>
