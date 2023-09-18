@@ -1,8 +1,5 @@
 from django.contrib import admin
-from .models import *
+from .models import Like,Note
 # Register your models here.
-
-
-admin.site.register(Post)
+admin.site.register(Note)
 admin.site.register(Like)
-admin.site.register(Comment)

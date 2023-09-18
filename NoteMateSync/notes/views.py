@@ -1,9 +1,9 @@
-from django.shortcuts import render,redirect
-from .models import Like,Post
+from django.shortcuts import render
+from .models import Like,Note
 # Create your views here.
 
 def note_view(request):
-    qs=Post.objects.all()
+    qs=Note.objects.all()
     user=request.user
 
     context={
@@ -13,5 +13,3 @@ def note_view(request):
 
     return render(request,'notes.html',context)
 
-# def like_note(request):
-#     return redirect('notes:note-list')
