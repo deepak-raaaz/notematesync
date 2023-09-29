@@ -70,7 +70,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="card mt-3" style="border-radius: 15px; overflow: hidden;">
               <!-- Thumbnail image -->
-              <img src="{{team.img.url}}" class="card-img-top" alt="...">
+              <img src="{{Notes.img.url}}" class="card-img-top" alt="...">
               <hr>
               <div class="card-body py-0 pb-3">
                 <div class="d-inline-flex py-2 px-3 mb-3" style="font-size: 0.85rem; background-color: hsla(0, 0%, 86%, 0.3); border-radius: 5px; color: #4886FF;">
@@ -94,7 +94,16 @@
                   <!-- Date -->
                   <span class="ms-2 fs-6">{{obj.created}}</span>
                 </div>
-
+                <form action="{% url 'notesapp:like-note' %}" method='POST'>
+                  {% csrf_token %}
+                  <input type="hidden" name='note_id' value={{obj.id}}>
+                  {% if user not in obj.liked.all %}
+                  <span><button class="ui button positive" type='submit'>Like</button></span>
+                  {% else %}
+                  <span><button class="ui button negative" type='submit'>Unlike</button></span>
+                  {% endif %} 
+                </form>
+                <strong>{{obj.liked.all.count}} Likes</strong>
                 <div class="d-inline-flex ms-2 mb-2" style="color: #848484;">
                   <span><i class="bi bi-hand-thumbs-up-fill"></i></span>
                   <!-- Like -->
